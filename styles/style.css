@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Shadows-Into-Light+Condensed:700|Shadows-Into-Light:100,300,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mea+Culpa&family=Shadows+Into+Light&display=swap');
 body {
     margin: 0;
-    background: url(./images/Caverna.jpg) 100% 100% no-repeat;
+    background-image: url('../images/Caverna.jpg') 100% 100% no-repeat;
     background-size: cover;
 }
 
 p {
-    color: green;
-    font-family: Shadows-Into-Light;
+    color: white;
+    font-family: 'Indie Flower', cursive;
     margin: 10;
+    font-size: 20px;
     display: inline-block;
     white-space: pre-wrap;
 }
@@ -17,16 +17,16 @@ p {
 #screen {
     width: 100vw;
     height: 90vh;
-    background: url(./images/Caverna.jpg) 100% 100% no-repeat;
+    background-image: url('../images/Caverna.jpg');
     background-size: cover;
-    font-family: Shadows-Into-Light;
+    font-family: 'Mea Culpa', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #playersInputSpot {
-    background: url(./images/Caverna.jpg) 100% 100% no-repeat;
+    background: url(../images/Caverna.jpg) 100% 100% no-repeat;
     background-size: cover;
     width: 100vw;
     height: 10vh;
@@ -47,7 +47,7 @@ p {
     font-size: 4vh;
     height: 130%;
     width: 30%;
-    background-color: purple;
+    background-color: grey;
     border: 2px;
     box-shadow: 2px;
     border-color: white;

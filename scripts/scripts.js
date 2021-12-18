@@ -89,14 +89,14 @@ function scene1() {
        }
    }
    if (x == 'choice1'){
-       choiceDisplayer('Tocar seu instrumento para afastar a figura e tomar o barco para si.', 'Explicar a situação para o barqueiro e pedir para ser levado para o outro lado', 'Se afastar da figura e seguir pelas margens do rio');
+       choiceDisplayer('Tocar  para afastar a figura e tomar o barco para si.', 'Explicar a situação para o barqueiro e pedir para ser levado para o outro lado', 'Se afastar da figura e seguir pelas margens do rio');
        displayer('Sob o comando de sua lira um clarão logo se acendeu no ar frente ao músico. Mesmo diante do luto até a natureza continuava se curvando a suas melodias o seguindo para onde quer que ele fosse. Agora, com o local melhor iluminado, ele seguiu cada vez mais a fundo.\n\n\n\O tempo ali o confundia. Ele não sabia dizer quantas horas caminhou até começar ouvir o som de água e logo se ver em frente as margens do Rio Estige, onde uma figura humanóide permanecia estática dentro de um pequeno barco.', 50, makeVisible)
        for (const choice of input){
            choice.onclick = function(){scene3()};
        }
    }
    if (x == 'choice3'){
-       choiceDisplayer('Tocar seu instrumento para afastar a figura e tomar o barco para si.', 'Conversar com o barqueiro e pedir por travessia', 'Se afastar da figura e seguir pelas margens do rio');
+       choiceDisplayer('Tocar  para afastar a figura e tomar o barco para si.', 'Conversar com o barqueiro e pedir por travessia', 'Se afastar da figura e seguir pelas margens do rio');
        displayer('Orfeu seguiu calmamente caverna abaixo, assobiando o canto preferido de sua falecida noiva. A melodia o fazia lembrar a cada passo do porque havia começado aquilo o dando forças para enfrentar a escuridão no que se transformou em horas e horas de caminhada até ele chegar num rio e se deparar com uma figura obscura em cima de um pequeno barco.', 50, makeVisible)
        for (const choice of input){
            choice.onclick = function(){scene3()};
@@ -108,17 +108,17 @@ function scene2() {
    let x = window.event.target.id;
  
    if (x == 'choice1'){
-       choiceDisplayer('Tocar seu instrumento para afastar a figura e tomar o barco para si', 'Conversar com o barqueiro e pedir por travessia', 'Se afastar da figura e seguir pelas margens do rio');
+       choiceDisplayer('Tocar  para afastar a figura e tomar o barco para si', 'Conversar com o barqueiro e pedir por travessia', 'Se afastar da figura e seguir pelas margens do rio');
        displayer('Orfeu se sentou no chão terroroso, seus olhos tentavam se adaptar à escuridão intensa enquanto ele aguardava seus pés pararem de doer, até que por um segundo ele achou ter ouvido algo. Se levantou e começou a andar em direção ao som que parecia calmo e familiar.\n\n\n\O tempo ali o confundia. Ele não sabia quanto tempo havia andado até identificar que se tratava do som de água corrente e logo se viu em frente as margens do Rio Estige, onde uma figura humanóide e estática se encontrava dentro de um pequeno barco.', 50, makeVisible)
        for (const choice of input){
            choice.onclick = function(){scene3()};
        }
    }
    if (x == 'choice2'){
-       displayer('Orfeu ignorava suas dores e tropeços e cada vez ia mais rápido, tudo o que importava agora era encontrar sua amada. O breu pra ele quase não era mais uma preocupação. Ele podia sentir que estava perto de encontrá-la até que seu pé esquerdo pisou em falso e em segundos ele se via em queda livre, sendo engolido pelo vazio escuro, silencioso e infernal do submundo.', 50, gameOver);
+       displayer('Orfeu ignorava suas dores e tropeços e cada vez ia mais rápido, tudo o que importava agora era encontrar sua amada. O breu pra ele quase não era mais uma preocupação. Ele podia sentir que estava perto de encontrá-la até que seu pé esquerdo pisou em falso e em segundos ele se via em queda livre, sendo engolido pelo vazio escuro, silencioso e infernal do submundo........................', 50, gameOver);
        }
    if (x == 'choice3'){
-       choiceDisplayer('Tocar seu instrumento para afastar a figura e tomar o barco para si', 'Conversar com o barqueiro e pedir por travessia', 'Se afastar da figura e seguir pelas margens do rio');
+       choiceDisplayer('Tocar  para afastar a figura e tomar o barco para si', 'Conversar com o barqueiro e pedir por travessia', 'Se afastar da figura e seguir pelas margens do rio');
        displayer('O som do seu assovio ecoava por todo o caminho e parecia ter renovado suas forças. As paredes já não pareciam mais tão gélidas e tão pouco o chão desregular pois a melodia não permitia que ele percebesse tais incômodos e não muito demorou para ele se ver em frente as margens do Rio Estige, onde uma figura humanóide permanecia estática dentro de um pequeno barco.', 50, makeVisible)
        for (const choice of input){
            choice.onclick = function(){scene3()};
@@ -183,10 +183,10 @@ function scene5() {
 function scene6() {
    let x = window.event.target.id;
    if (x == 'choice1'|| x =='choice2'){
-       displayer('O casal trocou um olhar cúmplice enquanto Orfeu falava e até a deusa, com um gesto, interrompê-lo. Ela e Hades pareciam ter se divertido com a ideia de um mortal ter conseguido chegar tão longe, mas nenhum dos dois se interessavam mais do que isso pelas suas súplicas ou muito menos pelas suas exigências. Orfeu não teve tempo para raciocinar que havia partido, mas os deuses instigados pela sua insolência, não só destruíram seu corpo, mas também sua alma. O privando eternamente de encontrar sua amada mesmo depois de também receber o abraço da morte............', 50, gameOver);
+       displayer('O casal trocou um olhar cúmplice enquanto Orfeu falava até que a deusa interrompê-lo com um gesto. Ela e Hades pareciam ter se divertido com a idéia de um mortal ter conseguido chegar tão longe, mas nenhum dos dois se interessava mais do que isso pelas suas súplicas ou exigências. Orfeu não teve tempo para raciocinar o que havia acontecido quando os deuses destruíram seu corpo e alma. O privando eternamente de encontrar sua amada mesmo depois da morte............', 50, gameOver);
        }
    if (x == 'choice3'){
-       displayer('Ao fim da música Pérsefone se encontrava ao prantos. O rosto do Rei do Inferno continuava vazio e ameaçador diante da música. E após longos minutos refletindo em silêncio Hades parabenizou Orfeu pela sua jornada inédita e prometeu devolver a alma de sua amada, mas não sem antes impor uma cláusula ao seu contrato verbal:\n\n\nA jovem retornaria com Orfeu ao universo dos vivos, desde que o amante não olhasse para sua amada até estar novamente sob o Sol. Ele consegue resistir através de túneis sombrios e difíceis de atravessar, e já estava quase chegando à esfera iluminada quando, para ter certeza de que a esposa estava logo atrás, espia por um instante a parte final do caminho. Neste momento, Eurídice se transforma novamente em um espectro, lança um último grito e parte para a esfera dos mortos.\n\n………………', 50, loading4);
+       displayer('A cada dedilhado em sua lira Orfeu colocava toda sua aflição pela perda da sua noiva e ao fim da música ele encarou a deusa pela primeira vez na vida se perguntando se sua música fora o suficiente.descobrir se havia sido o suficiente e após longos minutos de silêncio Hades tomou a frente parabenizando Orfeu pela sua jornada inédita e prometeu devolver a alma de sua amada, mas não sem antes impor uma cláusula ao seu contrato verbal:\n\n\nA jovem retornaria com Orfeu ao universo dos vivos, desde que o amante não olhasse para sua amada até estar novamente sob o Sol. Ele consegue resistir através de túneis sombrios e difíceis de atravessar, e já estava quase chegando à esfera iluminada quando, para ter certeza de que a noiva estava logo atrás, espia por um instante a parte final do caminho. Neste momento, Eurídice se transforma novamente em um espectro, lança um último grito e parte para a esfera dos mortos.\n\n………………', 50, loading4);
        }
    }
  
