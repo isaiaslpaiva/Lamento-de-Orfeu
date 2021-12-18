@@ -63,7 +63,7 @@ function loading1() {
    displayer('Iniciando...', 250, loading2);
 }
 function loading2() {
-   displayer('Contam as histórias que Orfeu foi o músico mais talentoso que já existiu. Seu talento era tanto que até mesmo o fogo, as árvores e rios se dobravam para suas melodias. \n\nComo todo grande artista ele tinha sua musa inspiradora, Eurídice, com a qual era noivo. Porém, pouco antes do casamento, Eurídice foi levada pelos braços da morte. Ao receber a notícia, Orfeu tomou a sua lira em mãos e com algumas notas fez a terra abrir uma passagem para o inferno, determinado a resgatar a alma de sua amada. \n\n\n Ao entrar no buraco para o Mundo Inferior ele se deparou com uma escuridão absoluta...', 50, loading3)
+   displayer('Contam as histórias que Orfeu foi o músico mais talentoso que já existiu. Seu talento era tanto que até mesmo o fogo, as árvores e rios se dobravam para suas melodias. \n\nComo todo grande artista ele tinha sua musa inspiradora, Eurídice, com a qual era noivo. Porém, pouco antes do casamento, Eurídice foi levada pelos braços da morte. Ao receber a notícia, Orfeu tomou a sua lira em mãos e com algumas notas fez a terra abrir uma passagem para o inferno, determinado a resgatar a alma de sua amada. \n\n\n Ao entrar no buraco para o Mundo Inferior ele se deparou com uma escuridão absoluta...', 0, loading3)
 }
  
 function loading3() {
@@ -83,21 +83,21 @@ function scene1() {
  
    if (x == 'choice2'){
        choiceDisplayer('Parar para descansar', 'Aumentar a velocidade', 'Assoviar a música preferida de Eurídice');
-       displayer('Orfeu então iniciou o árduo caminho para o mundo inferior.\n As paredes de terra eram úmidas e cheias de raízes e o chão disforme fazia ele bater com frequência em alguma pedra, mas o músico seguia determinado e cada vez mais cansado no que logo virou horas e horas de caminhada.', 50, makeVisible)
+       displayer('Orfeu então iniciou o árduo caminho para o mundo inferior.\n As paredes de terra eram úmidas e cheias de raízes e o chão disforme fazia ele bater com frequência em alguma pedra, mas o músico seguia determinado e cada vez mais cansado no que logo virou horas e horas de caminhada.', 10, makeVisible)
        for (const choice of input){
            choice.onclick = function(){scene2()};
        }
    }
    if (x == 'choice1'){
        choiceDisplayer('Tocar  para afastar a figura e tomar o barco para si.', 'Explicar a situação para o barqueiro e pedir para ser levado para o outro lado', 'Se afastar da figura e seguir pelas margens do rio');
-       displayer('Sob o comando de sua lira um clarão logo se acendeu no ar frente ao músico. Mesmo diante do luto até a natureza continuava se curvando a suas melodias o seguindo para onde quer que ele fosse. Agora, com o local melhor iluminado, ele seguiu cada vez mais a fundo.\n\n\n\O tempo ali o confundia. Ele não sabia dizer quantas horas caminhou até começar ouvir o som de água e logo se ver em frente as margens do Rio Estige, onde uma figura humanóide permanecia estática dentro de um pequeno barco.', 50, makeVisible)
+       displayer('Sob o comando de sua lira um clarão logo se acendeu no ar frente ao músico. Mesmo diante do luto até a natureza continuava se curvando a suas melodias o seguindo para onde quer que ele fosse. Agora, com o local melhor iluminado, ele seguiu cada vez mais a fundo.\n\n\n\O tempo ali o confundia. Ele não sabia dizer quantas horas caminhou até começar ouvir o som de água e logo se ver em frente as margens do Rio Estige, onde uma figura humanóide permanecia estática dentro de um pequeno barco.', 10, makeVisible)
        for (const choice of input){
            choice.onclick = function(){scene3()};
        }
    }
    if (x == 'choice3'){
        choiceDisplayer('Tocar  para afastar a figura e tomar o barco para si.', 'Conversar com o barqueiro e pedir por travessia', 'Se afastar da figura e seguir pelas margens do rio');
-       displayer('Orfeu seguiu calmamente caverna abaixo, assobiando o canto preferido de sua falecida noiva. A melodia o fazia lembrar a cada passo do porque havia começado aquilo o dando forças para enfrentar a escuridão no que se transformou em horas e horas de caminhada até ele chegar num rio e se deparar com uma figura obscura em cima de um pequeno barco.', 50, makeVisible)
+       displayer('Orfeu seguiu calmamente caverna abaixo, assobiando o canto preferido de sua falecida noiva. A melodia o fazia lembrar a cada passo do porque havia começado aquilo o dando forças para enfrentar a escuridão no que se transformou em horas e horas de caminhada até ele chegar num rio e se deparar com uma figura obscura em cima de um pequeno barco.', 0, makeVisible)
        for (const choice of input){
            choice.onclick = function(){scene3()};
        }
@@ -109,7 +109,7 @@ function scene2() {
  
    if (x == 'choice1'){
        choiceDisplayer('Tocar  para afastar a figura e tomar o barco para si', 'Conversar com o barqueiro e pedir por travessia', 'Se afastar da figura e seguir pelas margens do rio');
-       displayer('Orfeu se sentou no chão terroroso, seus olhos tentavam se adaptar à escuridão intensa enquanto ele aguardava seus pés pararem de doer, até que por um segundo ele achou ter ouvido algo. Se levantou e começou a andar em direção ao som que parecia calmo e familiar.\n\n\n\O tempo ali o confundia. Ele não sabia quanto tempo havia andado até identificar que se tratava do som de água corrente e logo se viu em frente as margens do Rio Estige, onde uma figura humanóide e estática se encontrava dentro de um pequeno barco.', 50, makeVisible)
+       displayer('Orfeu se sentou no chão terroroso, seus olhos tentavam se adaptar à escuridão intensa enquanto ele aguardava seus pés pararem de doer, até que por um segundo ele achou ter ouvido algo. Se levantou e começou a andar em direção ao som que parecia calmo e familiar.\n\n\n\O tempo ali o confundia. Ele não sabia quanto tempo havia andado até identificar que se tratava do som de água corrente e logo se viu em frente as margens do Rio Estige, onde uma figura humanóide e estática se encontrava dentro de um pequeno barco.', 0, makeVisible)
        for (const choice of input){
            choice.onclick = function(){scene3()};
        }
@@ -137,7 +137,7 @@ function scene3() {
    }
        if (x == 'choice2'){
        choiceDisplayer('Tirar a sua própria vida para que Caronte assim possa transportar sua alma', 'Expressar sua angústia e motivação através da lira', 'Tocar seu instrumento para obrigar Caronte a fazer a travessia.')
-       displayer('O barqueiro o ouviu silenciosamente e ao término da explicação revelou que seu nome era Caronte e que ele era responsável por levar atravessar as almas dos mortos para o outro o submundo, mas não podia fazer isso com Orfeu uma vez que ele ainda estava vivo.', 50, makeVisible);
+       displayer('O barqueiro o ouviu silenciosamente e ao término da explicação revelou que seu nome era Caronte e que ele era responsável por levar atravessar as almas dos mortos para o outro o submundo, mas não podia fazer isso com Orfeu uma vez que ele ainda estava vivo.', 0, makeVisible);
        for (const choice of input){
            choice.onclick = function(){scene4()};
        }
@@ -155,7 +155,7 @@ function scene4() {
    }
        if (x == 'choice2'){
        choiceDisplayer('Tocar sua lira para convencer o cão a saltar no rio', 'Brincar com o cão a fim de acalmá-lo', 'Tentar acalmar o cão ao som de uma melodia')
-       displayer('Embriagado pela música de Orfeu, Caronte decidiu fazer a travessia, mas não sem antes alertá-lo de que ele não seria seu único obstáculo. Um guardião infeliz e raivoso iria esperar ele do outro lado do rio e mesmo se conseguisse passar por ele ainda teria que enfrentar o próprio deus do Mundo Inferior. Hades. Do qual não tinha misericórdia.\n\n\nAo fim do trajeto Orfeu saltou do barco se deparando com uma figura surpreendente do qual só havia ouvido falar em suas cantigas de ninar. Se tratava do cão gigante de três cabeças, Cérbero.', 50, makeVisible);
+       displayer('Embriagado pela música de Orfeu, Caronte decidiu fazer a travessia, mas não sem antes alertá-lo de que ele não seria seu único obstáculo. Um guardião infeliz e raivoso iria esperar ele do outro lado do rio e mesmo se conseguisse passar por ele ainda teria que enfrentar o próprio deus do Mundo Inferior. Hades. Do qual não tinha misericórdia.\n\n\nAo fim do trajeto Orfeu saltou do barco se deparando com uma figura surpreendente do qual só havia ouvido falar em suas cantigas de ninar. Se tratava do cão gigante de três cabeças, Cérbero.', 10, makeVisible);
        for (const choice of input){
            choice.onclick = function(){scene5()};
        }
@@ -173,7 +173,7 @@ function scene5() {
    }
        if (x == 'choice3'){
        choiceDisplayer('Exigir humildemente que devolvam a vida de sua noiva', 'Implorar respeitosamente para ser ouvido por Hades.', 'Começar a tocar para Perséfone a música de sua história com Eurídes')
-       displayer('Uma-a-uma, as três cabeças do gigante quadrúpede se aquietaram ao som de Orfeu. E o que antes parecia uma fera monstruosa agora mais parecia um filhote babão. \n\n\nOrfeu então seguiu rumo ao castelo de Hades e ao mesmo tempo que se permitia cada vez mais sentir esperança, também cada vez temia mais não alcançar seu objetivo.\n\n\nAo chegar nos portões do castelo, Orfeu respirou fundo e entrou indo de encontro ao Rei e Rainha do inferno. Hades e Perséfone não pareciam amigáveis e pelo visto já tinham ciência da sua invasão.', 50, makeVisible);
+       displayer('Uma-a-uma, as três cabeças do gigante quadrúpede se aquietaram ao som de Orfeu. E o que antes parecia uma fera monstruosa agora mais parecia um filhote babão. \n\n\nOrfeu então seguiu rumo ao castelo de Hades e ao mesmo tempo que se permitia cada vez mais sentir esperança, também cada vez temia mais não alcançar seu objetivo.\n\n\nAo chegar nos portões do castelo, Orfeu respirou fundo e entrou indo de encontro ao Rei e Rainha do inferno. Hades e Perséfone não pareciam amigáveis e pelo visto já tinham ciência da sua invasão.', 10, makeVisible);
        for (const choice of input){
            choice.onclick = function(){scene6()};
        }
