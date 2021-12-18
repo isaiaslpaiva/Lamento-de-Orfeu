@@ -1,26 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows-Into-Light+Condensed:700|Shadows-Into-Light:100,300,700');
+
 body {
     margin: 0;
+    background: url(./images/Caverna.jpg) 100% 100% no-repeat;
+    background-size: cover;
 }
 
 p {
     color: green;
-    margin: 0;
+    font-family: Shadows-Into-Light;
+    margin: 10;
     display: inline-block;
     white-space: pre-wrap;
 }
 
 #screen {
-    background-color: black;
     width: 100vw;
     height: 90vh;
+    background: url(./images/Caverna.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    font-family: Shadows-Into-Light;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #playersInputSpot {
-
-    background-color: black;
+    background: url(./images/Caverna.jpg) 100% 100% no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -37,8 +44,13 @@ p {
 }
 
 .choices {
-    font-size: 5vh;
-    height: 75%;
+    font-size: 4vh;
+    height: 130%;
     width: 30%;
     background-color: purple;
+    border: 2px;
+    box-shadow: 2px;
+    border-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
